@@ -13,7 +13,7 @@ while True:
     if not line:
         break
     if match in line:
-        stat_entry = line[line.find('C'):]
+        stat_entry = line[line.find(match[0]):]
         if not stat_entry in missing_list:
             missing_list.append(stat_entry)
 
